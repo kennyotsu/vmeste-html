@@ -192,7 +192,8 @@ html {
   flex-wrap: wrap;
   margin: 0 auto;
   /* width: 100%; */
-  justify-content: space-evenly;
+  max-width: 560px;
+  justify-content: center;
   align-items: flex-start;
   align-content: stretch;
   flex-direction: row;
@@ -336,7 +337,15 @@ header {
   color: var(--accent);
 }
 
-
+.contacts_hero {
+  gap: 0 !important;
+  text-shadow: none !important;
+  color: #000 !important;;
+}
+.contacts_hero p {
+  font-size: 32px;
+  max-width: 400px;
+}
 
 .hero_image_bg {
   position: relative;
@@ -529,6 +538,30 @@ header {
 .index_content__newcomers h4 {
   font-size: 20px;
 }
+.contacts_container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+.contacts_map {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 80%;
+  padding: 50px 0 50px 0;
+  margin: 0 auto;
+}
+.contacts_info {
+  max-width: 400px;
+}
+.contacts_links {
+  text-align: end;
+}
 
 footer {
   position: fixed;
@@ -720,6 +753,18 @@ main .container {
     scale: 0.8;
   }
 
+  .contacts_container {
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 20px 50px 20px;
+  }
+  .contacts_info {
+    max-width: 300px;
+  }
+  .contacts_links {
+    text-align: start;
+  }
+
 
   .hero__title {
     font-size: 20px;
@@ -729,6 +774,20 @@ main .container {
   }
   .hero h1 {
     font-size: 40px
+  }
+  .contacts_hero p {
+    font-size: 24px;
+    max-width: 300px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 200px;
+  }
+  .contacts_map {
+    padding: 10px;
+    border-radius: 12px;
   }
 
   .prices {
