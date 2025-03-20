@@ -161,7 +161,10 @@ html {
 
 .hero_wrapper {
   position: relative;
+}
 
+.hero h1 {
+  font-size: 90px
 }
 
 header {
@@ -640,11 +643,15 @@ main .container {
     scale: 0.8;
   }
 
+
   .hero__title {
     font-size: 20px;
   }
   .hero__logo img {
     width: clamp(100px, 75vw, 350px);
+  }
+  .hero h1 {
+    font-size: 40px
   }
 
 
