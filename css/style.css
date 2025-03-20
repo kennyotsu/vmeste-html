@@ -196,12 +196,13 @@ html {
   max-width: 560px;
   justify-content: center;
   align-items: flex-start;
-  align-content: stretch;
+  align-content: flex-start;
   flex-direction: row;
-  gap: 20px;
+  gap: 60px 30px;
 }
 .documents_link {
-  max-width: 140px;
+  width: 140px;
+  height: 140px;
   text-align: center;
   scale: 1;
   transition: scale 0.3s ease;
@@ -841,8 +842,8 @@ main .container {
 
 }
 
-@media (max-width: 550px) { 
-  .hero__logo img{
+@media (max-width: 550px) {
+  .hero__logo img {
     width: 50%;
   }
   .hero_image_bg__img {
