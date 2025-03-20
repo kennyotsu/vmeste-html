@@ -341,16 +341,21 @@ header {
 .menu_toggle:hover {
   color: var(--accent);
 }
+.contacts {
+  overflow: hidden;
+}
 
 .contacts_hero {
   gap: 0 !important;
   text-shadow: none !important;
-  color: #000 !important;;
+  color: #000 !important;
+  justify-content: center !important;
 }
 .contacts_hero p {
   font-size: 32px;
   max-width: 400px;
 }
+
 
 .hero_image_bg {
   position: relative;
@@ -698,6 +703,9 @@ main .container {
   .close_menu {
     display: none;
   }
+  .mobile_actions {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
 
   .header_menu.active ~ .mobile_actions .close_menu {
     display: block;
@@ -794,6 +802,9 @@ main .container {
     padding: 10px;
     border-radius: 12px;
   }
+  .contacts_bg_override {
+    height: 400px !important;
+  }
 
   .prices {
     flex-direction: column;
@@ -804,6 +815,7 @@ main .container {
   .prices__img_anchor {
     display: block;
   }
+  
   .about_container {
     flex-direction: column;
   }
