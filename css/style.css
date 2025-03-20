@@ -585,7 +585,7 @@ footer {
 
 }
 footer .container {
-  padding: clamp(6px, 5vw, 12px);
+  padding: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -599,7 +599,7 @@ footer .container {
 
 .footer__logo img {
   filter: grayscale(100%)brightness(100);
-  width: clamp(50px, 20vw, 120px);
+  width: clamp(70px, 10vw, 60px);
   padding: 10px;
 }
 .footer_socials {
@@ -612,11 +612,11 @@ footer .container {
   gap: 35px;
 }
 .footer_socials .social_icon {
-  scale: 1;
+  scale: 0.8;
   transition: all 0.3s ease;
 }
 .social_icon:hover {
-  scale: 1.2;
+  scale: 1;
   transition: all 0.3s ease;
 }
 .footer__tel {
