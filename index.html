@@ -20,7 +20,11 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
-
+  <style>
+    .hero_image_bg__img {
+      background-image: url(assets/img/index_bg.jpg);
+    }
+  </style>
 </head>
 
 <body>
@@ -32,11 +36,27 @@
       <!-- Desktop menu -->
       <div class="header_menu" id="headerMenu">
         <div class="left_links">
-          <a class="header_menu__link menu_main" id="menu_main">Главная</a>
-          <a class="header_menu__link menu_price" id="menu_prices">Цены</a>
-          <a class="header_menu__link menu_documents" id="menu_documents">Документы</a>
-          <a class="header_menu__link menu_about" id="menu_about">O нас</a>
-          <a class="header_menu__link menu_contacts" id="menu_contacts">Контакты</a>
+          <a class="header_menu__link menu_main menu_active"
+             id="menu_main"
+             href="index.html"
+             >Главная</a>
+          <a class="header_menu__link menu_price"
+             id="menu_prices"
+             href="prices.html"
+             target="_self"
+             >Цены</a>
+          <a class="header_menu__link menu_documents"
+             id="menu_documents"
+             href="documents.html"
+             >Документы</a>
+          <a class="header_menu__link menu_about"
+             id="menu_about"
+             href="about.html"
+             >O нас</a>
+          <a class="header_menu__link menu_contacts"
+             id="menu_contacts"
+             href="contacts.html"
+             >Контакты</a>
         </div>
         <div class="right_links">
           <a class="header_menu__link menu_tel" href="tel:79221822122" id="menu_tel">+7 (922) 182-21-22</a>

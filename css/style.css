@@ -61,7 +61,7 @@ textarea {
   url('../assets/fonts/Unbounded-ExtraLight.woff') format('woff');
   font-weight: 200;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -71,7 +71,7 @@ textarea {
   url('../assets/fonts/Unbounded-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -81,7 +81,7 @@ textarea {
   url('../assets/fonts/Unbounded-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -91,7 +91,7 @@ textarea {
   url('../assets/fonts/Unbounded-ExtraBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -101,7 +101,7 @@ textarea {
   url('../assets/fonts/Unbounded-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -111,7 +111,7 @@ textarea {
   url('../assets/fonts/Unbounded-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -121,7 +121,7 @@ textarea {
   url('../assets/fonts/Unbounded-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -131,7 +131,7 @@ textarea {
   url('../assets/fonts/Unbounded-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 body {
@@ -219,7 +219,7 @@ header {
   font-weight: normal;
 }
 
-.menu_main {
+.menu_active {
   font-weight: bold;
   color: var(--accent);
 }
@@ -256,7 +256,7 @@ header {
 }
 
 .hero_image_bg__img {
-  background-image: url(../assets/img/index_bg.jpg);
+  /*фоновое изображение задано в HTML*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -319,6 +319,12 @@ footer .container {
   align-items: center;
   position: relative;
 }
+.footer__logo {
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+}
+
 .footer__logo img {
   filter: grayscale(100%)brightness(100);
   width: 120px;
@@ -334,11 +340,11 @@ footer .container {
   gap: 35px;
 }
 .footer_socials .social_icon {
-  scale: 0.8;
+  scale: 1;
   transition: all 0.3s ease;
 }
 .social_icon:hover {
-  scale: 1;
+  scale: 1.2;
   transition: all 0.3s ease;
 }
 .footer__tel {
@@ -350,6 +356,8 @@ footer .container {
   width: 100%;
   display: block;
   text-align: end;
+  position: relative;
+  z-index: 20;
 }
 .footer__tel:hover {
   color: var(--accent);
@@ -443,6 +451,9 @@ main .container {
   .footer_socials{
     position: relative;
     gap: 12px;
+  }
+  .footer_socials .social_icon {
+    scale: 0.8;
   }
 
 
