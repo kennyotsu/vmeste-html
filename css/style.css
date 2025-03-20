@@ -324,7 +324,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  padding: 25px 40px;
+  padding: 18px 22px;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
 }
@@ -647,10 +647,10 @@ main .container {
     position: absolute;
     left: 0;
     right: 0;
-    top: 70px;
+    top: 52px;
     flex-direction: column;
     align-items: flex-end;
-    padding: 20px 40px;
+    padding: 18px 22px;
     margin: 20px 10px;
     border-radius: 12px;
     max-height: 0;
@@ -815,7 +815,7 @@ main .container {
   .prices__img_anchor {
     display: block;
   }
-  
+
   .about_container {
     flex-direction: column;
   }
@@ -841,7 +841,13 @@ main .container {
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 550px) { 
+  .hero__logo img{
+    width: 50%;
+  }
+  .hero_image_bg__img {
+    height: 450px;
+  }
   .index_content h2 {
     font-size: 24px;
   }
