@@ -31,7 +31,10 @@ p {
   margin: 0;
 }
 
-
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 audio,
 canvas,
@@ -178,6 +181,39 @@ html {
 .prices img {
   margin: 0 auto;
   width: 100%;
+}
+
+.documents_container{
+  background-image: url('../assets/img/docs_bg.png');
+  padding: 40px 20px 200px 20px;
+}
+.documents_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  /* width: 100%; */
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: stretch;
+  flex-direction: row;
+  gap: 20px;
+}
+.documents_link {
+  max-width: 140px;
+  text-align: center;
+  scale: 1;
+  transition: scale 0.3s ease;
+}
+.documents_link:hover {
+  scale: 1.1;
+  transition: scale 0.3s ease;
+  cursor: pointer;
+}
+.documents_link p {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
 }
 
 
