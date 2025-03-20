@@ -164,6 +164,7 @@ html {
 
 .hero_wrapper {
   position: relative;
+
 }
 
 .hero h1 {
@@ -216,8 +217,12 @@ html {
   font-weight: 300;
   text-align: center;
 }
+.about_carousel_container {
+  overflow: hidden;
+}
 .about_carousel {
   margin: 30px 0 30px 0;
+
 }
 
 .about_container {
@@ -408,7 +413,7 @@ header {
   margin: 0 auto;
   padding: 20px 20px 200px 20px;
   height: fit-content;
-
+  overflow: hidden;
 }
 .index_content__wrapper {
   display: flex;
@@ -802,6 +807,9 @@ main .container {
   .about_container {
     flex-direction: column;
   }
+  .container {
+    margin: 0;
+  }
 }
 
 @media (min-width: 979px) {
@@ -820,6 +828,25 @@ main .container {
   }
 
 }
+
+@media (max-width: 550px) {
+  .index_content h2 {
+    font-size: 24px;
+  }
+  .index_content__block {
+    font-size: 14px;
+  }
+  .index_options {
+    font-size: 13px !important;
+  }
+  .figure {
+    scale: 0.8;
+  }
+  .index-bg {
+    width: 230px;
+  }
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
