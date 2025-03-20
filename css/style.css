@@ -215,6 +215,33 @@ html {
   font-weight: 300;
   text-align: center;
 }
+.about_carousel {
+  margin: 30px 0 30px 0;
+}
+
+.about_container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0 20px 200px 20px;
+  flex-direction: column-reverse;
+
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+
+  font-weight: 200;
+}
+.about_container p {
+  width: 100%;
+}
+.accent_span {
+  font-weight: 400;
+  color: var(--accent);
+}
+
+
 
 
 header {
@@ -713,7 +740,9 @@ main .container {
   .prices__img_anchor {
     display: block;
   }
-
+  .about_container {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 979px) {
@@ -735,6 +764,18 @@ main .container {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
 
 /*
  * Hide visually and from screen readers
